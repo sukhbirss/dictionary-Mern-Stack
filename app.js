@@ -48,7 +48,7 @@ app.use((req,res,next) => {
 	next();
 });
 
-app.get("/word/:id", (req, res) => {
+app.get("/api/word/:id", (req, res) => {
 
 	
 
@@ -81,7 +81,7 @@ app.get("/word/:id", (req, res) => {
    
 });
 
-app.get("/getdata", async(req, res) => {
+app.get("/api/getdata", async(req, res) => {
 
 	  const vocab =  await Vocab.find()
 	  console.log(Vocab)
@@ -92,7 +92,7 @@ app.get("/getdata", async(req, res) => {
 	   	
 });
 
-app.get("/worddetail/:word", async(req, res) => {
+app.get("/api/worddetail/:word", async(req, res) => {
 
 	const app_id = "76f2e22c"; // insert your APP Id
 	const app_key = "e7f9acd6911f65034e27e1e4433469e3"; // insert your APP Key

@@ -13,7 +13,7 @@ function Home() {
 
   const [data, setData] = useState([{"word":"LOADING","meaning":"nothing"}])
   useEffect(() => {
-      axios.get('/getdata')
+      axios.get('/api/getdata')
       .then((res) => {
           setData(res.data.vocab)
       })
