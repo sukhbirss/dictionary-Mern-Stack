@@ -9,7 +9,7 @@ function WordDetail() {
 	const [data, setData] = useState(null)
 
 	useEffect(() => {
-			axios.get(`/api/worddetail/${word}`)
+			axios.post(`/api/worddetail/${word}`)
 			.then((res) => {
 				console.log(res.data)
 				setData(res.data)

@@ -6,7 +6,7 @@ function AddNewWord(props) {
 	const [word, setWord] = useState('');
 
 	const addThisWord = (word) => {
-       axios.get(`http://localhost:4000/word/${word}`)
+       axios.post(`/api/word/${word}`)
           .then((res) =>{
             const meaning = res.data.results[0].lexicalEntries[0].entries[0].senses[0].definitions
             let newWord = {"word":word,"meaning":meaning}
