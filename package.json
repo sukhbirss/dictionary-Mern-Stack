@@ -24,6 +24,10 @@
     "validator": "^13.0.0",
     "xss-clean": "^0.1.1"
   },
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  },
   "devDependencies": {},
   "scripts": {
     "start": "node server.js",
