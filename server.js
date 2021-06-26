@@ -5,7 +5,7 @@ const app = require('./app');
 
 
 const {MONGOURL} = require('./config/keys');
-
+console.log(MONGOURL)
 mongoose
   .connect(MONGOURL, {
     useNewUrlParser: true,
