@@ -1,0 +1,42 @@
+.container{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 0;
+}
+.box{
+	width: 90%;
+	height: 180px;
+	border-radius: 10px;
+	border:solid 1px black;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	animation: createBox 0.7s;
+	z-index: 2;
+
+}
+
+.backdrop{
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	opacity: 0.5;
+	position: fixed;
+
+}
+
+
+@keyframes createBox {
+  from {
+      transform: translateY(-250%);
+  }
+  to {
+      transform: translateY(2%);
+    
+  }
+}

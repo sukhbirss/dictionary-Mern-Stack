@@ -1,0 +1,69 @@
+.container{
+	width: 100vw;
+	height:100vh;
+	background-color: #5d1049;
+	position: relative;
+}
+.header{
+	width: 90%;
+	height: 8vh;
+	position: absolute;
+	top: 0px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 25px;
+	color:white;
+	align-items: center;
+	padding: 0px 5% 0px 5%;
+}
+.icon{
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 50%;
+}
+.result{
+	width: 100%;
+	height: 92vh;
+	position: absolute;
+	bottom: 0px;
+	background-color: white;
+	border-radius: 30px 30px 0px 0px;
+}
+
+.result_top{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+.result_top > p{
+	padding-left: 20px;
+}
+
+.result_data{
+	width: 100%;
+	height:Calc(100% - 50px);
+	border-top:solid 1px #e2e2e2;
+	overflow-y: scroll;
+}
+.result_data > div{
+	width: 80%;
+	min-height: 50px;
+	display: flex;
+	padding: 0px 10% 0px 10%;
+	flex-direction: column;
+	justify-content:  center;
+	border-bottom: solid 1px #e2e2e2;
+}
+
+.result_data > div > p:nth-child(1) {
+  font-size: 1.5rem;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+.result_data > div > p:nth-child(2) {
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+  color: grey;
+}
